@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/process.py": {
+      "maxDuration": 300
+    },
+    "api/health.py": {
+      "maxDuration": 10
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/process",
+      "schedule": "* * * * *"
+    }
+  ]
+}
