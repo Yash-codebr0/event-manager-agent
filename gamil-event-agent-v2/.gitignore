@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+
+credentials.json
+token.json
+gmail_token.json
+calendar_token.json
+
+__pycache__/
+*.pyc
+
+.venv/
+venv/
